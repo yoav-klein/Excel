@@ -1,0 +1,6 @@
+
+Conditional formatting:
+
+Format cells if the sum of the cell and the two previous cells are greater than 300
+Good for categories like clothing, in which you want to see the costs of, like, 3 months or so.
+=OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),0,0)+OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),0,-2)+OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),0,-2)>300
